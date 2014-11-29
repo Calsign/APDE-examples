@@ -1,11 +1,11 @@
 /**
- * Rotate Push Pop. 
+ * Rotate Push Pop.
  * 
- * The push() and pop() functions allow for more control over transformations.
+ * The push() and pop() functions allow for more control over transformations. 
  * The push function saves the current coordinate system to the stack 
- * and pop() restores the prior coordinate system. 
+ * and pop() restores the prior coordinate system.
  */
- 
+
 float a;                          // Angle of rotation
 float offset = PI/24.0;             // Angle offset between boxes
 int num = 12;                     // Number of boxes
@@ -24,7 +24,6 @@ void setup()
   }
   lights();
 } 
- 
 
 void draw() 
 {     

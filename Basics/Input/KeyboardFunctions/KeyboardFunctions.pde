@@ -1,14 +1,14 @@
 /**
- * Keyboard Functions. 
- * Modified from code by Martin. 
- * Original 'Color Typewriter' concept by John Maeda. 
+ * Keyboard Functions.
+ * Modified from code by Martin.
+ * Original 'Color Typewriter' concept by John Maeda.
  * 
  * Click on the window to give it focus and press the letter keys to type colors. 
- * The keyboard function keyPressed() is called whenever
- * a key is pressed. keyReleased() is another keyboard
+ * The keyboard function keyPressed() is called whenever 
+ * a key is pressed. keyReleased() is another keyboard 
  * function that is called when a key is released.
  */
- 
+
 int max_height = 20;
 int min_height = 10;
 int letter_height = max_height; // Height of the letters

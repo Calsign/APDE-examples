@@ -1,8 +1,8 @@
 /**
  * Perspective.
  * 
- * Move the mouse left and right to change the field of view (fov).
- * Click to modify the aspect ratio. The perspective() function
+ * Move the mouse left and right to change the field of view (fov). 
+ * Click to modify the aspect ratio. The perspective() function 
  * sets a perspective projection applying foreshortening, making 
  * distant objects appear smaller than closer ones. The parameters 
  * define a viewing volume with the shape of truncated pyramid. 

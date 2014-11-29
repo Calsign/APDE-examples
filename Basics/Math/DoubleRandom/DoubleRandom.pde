@@ -1,6 +1,6 @@
 /**
- * Double Random 
- * by Ira Greenberg.  
+ * Double Random
+ * by Ira Greenberg.
  * 
  * Using two random() calls and the point() function 
  * to create an irregular sawtooth line.
@@ -17,4 +17,3 @@ for  (int i = 1; i < steps; i++){
   point( (width/steps) * i, (height/2) + random(-rand, rand) );
   rand += random(-5, 5);
 }
-

@@ -1,12 +1,10 @@
 /**
- * Constrain. 
+ * Constrain.
  * 
  * Move the mouse across the screen to move the circle. 
- * The program constrains the circle to its box. 
- * 
- * Updated 27 February 2010 to handle changes in size().
+ * The program constrains the circle to its box.
  */
- 
+
 float mx;
 float my;
 float easing = 0.05;

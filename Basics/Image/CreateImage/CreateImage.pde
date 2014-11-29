@@ -1,7 +1,7 @@
 /**
- * Create Image. 
+ * Create Image.
  * 
- * The createImage() function provides a fresh buffer of pixels to play with.
+ * The createImage() function provides a fresh buffer of pixels to play with. 
  * This example creates an image gradient.
  */
 

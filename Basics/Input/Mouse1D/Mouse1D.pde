@@ -1,11 +1,11 @@
 /**
- * Mouse 1D. 
+ * Mouse 1D.
  * 
  * Move the mouse left and right to shift the balance. 
  * The "mouseX" variable is used to control both the 
- * size and color of the rectangles. 
+ * size and color of the rectangles.
  */
- 
+
 int gx = 15;
 int gy = 35;
 float leftColor = 0.0;
@@ -29,7 +29,7 @@ void draw() {
 void update(int x) {
   leftColor = -0.002 * x/2 + 0.06;
   rightColor =  0.002 * x/2 + 0.06;
-	
+
   gx = x/2;
   gy = 100-x/2;
 

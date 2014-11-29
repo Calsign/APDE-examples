@@ -1,12 +1,12 @@
 /**
- * Mouse Signals. 
+ * Mouse Signals.
  * 
  * Move and click the mouse to generate signals. 
  * The top row is the signal from "mouseX", 
- * the middle row is the signal from "mouseY",
- * and the bottom row is the signal from "mousePressed". 
+ * the middle row is the signal from "mouseY", 
+ * and the bottom row is the signal from "mousePressed".
  */
- 
+
 int[] xvals;
 int[] yvals;
 int[] bvals;
@@ -24,7 +24,7 @@ int arrayindex = 0;
 void draw()
 {
   background(102);
-  
+
   for(int i=1; i<width; i++) { 
     xvals[i-1] = xvals[i]; 
     yvals[i-1] = yvals[i];
@@ -38,7 +38,7 @@ void draw()
   } else {
     bvals[width-1] = 255;
   }
-  
+
   fill(255);
   noStroke();
   rect(0, height/3, width, height/3+1);

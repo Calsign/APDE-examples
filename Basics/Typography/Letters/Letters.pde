@@ -1,5 +1,5 @@
 /**
- * Letters. 
+ * Letters.
  * 
  * Draws letters to the screen. This requires loading a font, 
  * setting the font, and then drawing the letters.
@@ -69,4 +69,3 @@ void draw()
     }
   }
 }
-

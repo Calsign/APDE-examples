@@ -1,11 +1,11 @@
 /**
  * Sprite2 (Teddy)
- * by James Patterson. 
+ * by James Patterson.
  * 
  * Demonstrates loading and displaying a transparent GIF image. 
  * This alternate version shows a sky image in the background.
  */
- 
+
 PImage teddy;
 PImage sky;
 

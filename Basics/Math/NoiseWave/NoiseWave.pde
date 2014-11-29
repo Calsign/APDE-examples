@@ -1,10 +1,10 @@
 /**
  * Noise Wave
- * by Daniel Shiffman.  
+ * by Daniel Shiffman.
  * 
- * Using Perlin Noise to generate a wave-like pattern. 
+ * Using Perlin Noise to generate a wave-like pattern.
  */
- 
+
 int xspacing = 8;   // How far apart should each horizontal location be spaced
 int w;              // Width of entire wave
 
@@ -24,7 +24,6 @@ void draw() {
   background(0);
   calcWave();
   renderWave();
-
 }
 
 void calcWave() {
@@ -45,7 +44,6 @@ void calcWave() {
     yvalues[i] = (2*noise(xoff)-1)*amplitude;    // Option #2
     xoff+=dx;
   }
-
 }
 
 void renderWave() {
@@ -57,4 +55,3 @@ void renderWave() {
     ellipse(x*xspacing,width/2+yvalues[x],16,16);
   }
 }
-

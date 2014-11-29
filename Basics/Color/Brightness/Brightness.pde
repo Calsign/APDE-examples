@@ -2,10 +2,10 @@
  * Brightness
  * by Rusty Robison.
  * 
- * Brightness is the relative lightness or darkness of a color.
+ * Brightness is the relative lightness or darkness of a color. 
  * Move the cursor vertically over each bar to alter its brightness.
  */
- 
+
 int barWidth = 5;
 int lastBar = -1;
 

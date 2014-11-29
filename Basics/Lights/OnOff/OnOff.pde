@@ -1,11 +1,11 @@
 /**
- * On/Off.  
+ * On/Off.
  * 
- * Uses the default lights to show a simple box. The lights() function
- * is used to turn on the default lighting. Click the mouse to turn the
+ * Uses the default lights to show a simple box. The lights() function 
+ * is used to turn on the default lighting. Click the mouse to turn the 
  * lights off.
  */
- 
+
 float spin = 0.0;
 boolean on = true;
 

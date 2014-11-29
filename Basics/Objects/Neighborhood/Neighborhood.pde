@@ -1,17 +1,17 @@
 /**
  * Neighborhood (OOP Example)
- * By Ira Greenberg 
+ * By Ira Greenberg
  * 
- * Draw a neighborhood of houses using
- * Door, Window, Roof and House classes.
- * Good example of class composition, with component
- * Door, Window, Roof class references encapsulated
+ * Draw a neighborhood of houses using 
+ * Door, Window, Roof and House classes. 
+ * Good example of class composition, with component 
+ * Door, Window, Roof class references encapsulated 
  * within House class. This arrangement allows 
  * House class to handle placement and sizing of 
- * its components, while still allowing user
+ * its components, while still allowing user 
  * customization of the individual components.
  */
- 
+
 void setup(){
   size(200, 200);
   background(190);
@@ -300,4 +300,3 @@ class House{
     drawHouse(x, y, false);
   }
 }
-

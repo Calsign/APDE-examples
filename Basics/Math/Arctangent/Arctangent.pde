@@ -1,11 +1,11 @@
 /**
- * Arctangent. 
+ * Arctangent.
  * 
  * Move the mouse to change the direction of the eyes. 
  * The atan2() function computes the angle from each eye 
- * to the cursor. 
+ * to the cursor.
  */
- 
+
 Eye e1, e2, e3, e4, e5;
 
 void setup() 
@@ -64,4 +64,3 @@ class Eye
     popMatrix();
   }
 }
-

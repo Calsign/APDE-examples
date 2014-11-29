@@ -1,8 +1,8 @@
 /**
- * Mixture Grid  
- * modified from an example by Simon Greenwold. 
+ * Mixture Grid 
+ * modified from an example by Simon Greenwold.
  * 
- * Display a 2D grid of boxes with three different kinds of lights. 
+ * Display a 2D grid of boxes with three different kinds of lights.
  */
 
 void setup() {

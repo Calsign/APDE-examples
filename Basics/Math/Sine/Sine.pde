@@ -1,9 +1,9 @@
 /**
- * Sine. 
+ * Sine.
  * 
- * Smoothly scaling size with the sin() function. 
+ * Smoothly scaling size with the sin() function.
  */
- 
+
 float spin = 0.0; 
 float diameter = 84.0; 
 float angle;
@@ -43,4 +43,3 @@ void draw()
   angle += 0.02;
   if (angle > TWO_PI) { angle = 0; }
 }
-

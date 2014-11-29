@@ -1,9 +1,9 @@
 /**
- * No Loop. 
+ * No Loop.
  * 
- * The noLoop() function causes draw() to only
- * execute once. Without calling noLoop(), draw()
- * executed continually. 
+ * The noLoop() function causes draw() to only 
+ * execute once. Without calling noLoop(), draw() 
+ * executed continually.
  */
 
 // The statements in the setup() function 
@@ -29,5 +29,3 @@ void draw()
   if (y < 0) { y = height; } 
   line(0, y, width, y);  
 } 
-
-

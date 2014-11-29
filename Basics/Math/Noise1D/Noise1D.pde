@@ -1,9 +1,9 @@
 /**
- * Noise1D. 
+ * Noise1D.
  * 
- * Using 1D Perlin Noise to assign location. 
+ * Using 1D Perlin Noise to assign location.
  */
- 
+
 float xoff = 0.0;
 float xincrement = 0.01; 
 
@@ -33,5 +33,3 @@ void draw()
   fill(200);
   ellipse(n,height/2,16,16);
 }
-
-

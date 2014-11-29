@@ -1,9 +1,9 @@
 /**
- * Transparency. 
+ * Transparency.
  * 
- * Move the pointer left and right across the image to change
+ * Move the pointer left and right across the image to change 
  * its position. This program overlays one image over another 
- * by modifying the alpha value of the image with the tint() function. 
+ * by modifying the alpha value of the image with the tint() function.
  */
 
 PImage a, b;
@@ -22,8 +22,3 @@ void draw() {
   tint(255, 153);
   image(b, offset, 20);
 }
-
-
-
-
-

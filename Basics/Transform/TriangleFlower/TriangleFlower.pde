@@ -1,12 +1,10 @@
 /**
- * Triangle Flower 
- * by Ira Greenberg. 
+ * Triangle Flower
+ * by Ira Greenberg.
  * 
  * Using rotate() and triangle() functions generate a pretty 
- * flower. Uncomment the line "// rotate(rot+=radians(spin));"
+ * flower. Uncomment the line "// rotate(rot+=radians(spin));" 
  * in the triBlur() function for a nice variation.
- * 
- * Updated 27 February 2010.
  */
 
 PVector[] p = new PVector[3];
@@ -44,4 +42,3 @@ void triBlur() {
     triBlur();
   }
 }
-

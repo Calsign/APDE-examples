@@ -1,12 +1,12 @@
 /**
- * Sine Cosine. 
+ * Sine Cosine.
  * 
  * Linear movement with sin() and cos(). 
  * Numbers between 0 and PI*2 (TWO_PI which is roughly 6.28) 
  * are put into these functions and numbers between -1 and 1 are 
- * returned. These values are then scaled to produce larger movements. 
+ * returned. These values are then scaled to produce larger movements.
  */
- 
+
 int i = 45;
 int j = 225; 
 float pos1 = 0; 
@@ -56,4 +56,3 @@ void draw()
   pos3 = width/2 + (sc * cos(ang2));
   pos4 = width/2 + (sc * sin(ang2));
 }
-

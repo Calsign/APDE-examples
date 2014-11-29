@@ -1,12 +1,12 @@
 /**
  * Request Image
- * by Ira Greenberg. 
- * From Processing for Flash Developers, Friends of ED, 2009. 
+ * by Ira Greenberg.
+ * From Processing for Flash Developers, Friends of ED, 2009.
  * 
  * Shows how to use the requestImage() function with preloader animation. 
  * The requestImage() function loads images on a separate thread so that 
- * the sketch does not freeze while they load. It's very useful when you are
- * loading large images, as this example demonstrates. 
+ * the sketch does not freeze while they load. It's very useful when you are 
+ * loading large images, as this example demonstrates.
  * 
  * To work, this example requires 10 images named dublin0.jpg ... dublin9.jpg 
  * in the sketch data directory. To save space, these images are not included 
@@ -83,9 +83,3 @@ boolean checkLoadStates(){
   }
   return true;
 }
-
-
-
-
-
-

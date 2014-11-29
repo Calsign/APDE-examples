@@ -1,11 +1,11 @@
 /**
- * Directional. 
+ * Directional.
  * 
- * Move the mouse the change the direction of the light.
+ * Move the mouse the change the direction of the light. 
  * Directional light comes from one direction and is stronger 
  * when hitting a surface squarely and weaker if it hits at a 
  * a gentle angle. After hitting a surface, a directional lights 
- * scatters in all directions. 
+ * scatters in all directions.
  */
 
 void setup() {
@@ -26,4 +26,3 @@ void draw() {
   translate(200, 0, 0); 
   sphere(80); 
 }
-

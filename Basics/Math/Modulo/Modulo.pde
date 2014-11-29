@@ -1,11 +1,11 @@
 /**
- * Modulo. 
+ * Modulo.
  * 
  * The modulo operator (%) returns the remainder of a number 
  * divided by another. As in this example, it is often used 
- * to keep numerical values within a set range. 
+ * to keep numerical values within a set range.
  */
- 
+
 int num = 20;
 float c;
 
@@ -28,4 +28,3 @@ void draw()
     rect(x, i*num-num/2, 8, num);
   } 
 } 
-

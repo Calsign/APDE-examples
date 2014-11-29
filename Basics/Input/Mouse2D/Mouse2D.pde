@@ -1,9 +1,9 @@
 /**
- * Mouse 2D. 
+ * Mouse 2D.
  * 
- * Moving the mouse changes the position and size of each box. 
+ * Moving the mouse changes the position and size of each box.
  */
- 
+
 void setup() 
 {
   size(200, 200); 
@@ -21,4 +21,3 @@ void draw()
   int inverseY = height-mouseY;
   rect(inverseX, height/2, (inverseY/2)+10, (inverseY/2)+10);
 }
-

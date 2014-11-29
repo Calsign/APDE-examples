@@ -1,10 +1,10 @@
 /**
- * Distance 1D. 
+ * Distance 1D.
  * 
  * Move the mouse left and right to control the 
- * speed and direction of the moving shapes. 
+ * speed and direction of the moving shapes.
  */
- 
+
 int thin = 8;
 int thick = 36;
 float xpos1 = 134.0;
@@ -48,4 +48,3 @@ void draw()
   if(xpos4 < -thick) { xpos4 =  width; }
   if(xpos4 >  width) { xpos4 = -thick; }
 }
-

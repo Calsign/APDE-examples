@@ -1,10 +1,10 @@
 /**
- * Ignore Styles. 
- * Illustration by George Brower. 
+ * Ignore Styles.
+ * Illustration by George Brower.
  * 
- * Shapes are loaded with style information that tells them how
+ * Shapes are loaded with style information that tells them how 
  * to draw (the color, stroke weight, etc.) The disableStyle() 
- * method of PShape turns off this information. The enableStyle()
+ * method of PShape turns off this information. The enableStyle() 
  * method turns it back on.
  */
 

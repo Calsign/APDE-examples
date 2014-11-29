@@ -1,10 +1,10 @@
 /**
- * Load and Display 
+ * Load and Display
  * 
- * Images can be loaded and displayed to the screen at their actual size
- * or any other size. 
+ * Images can be loaded and displayed to the screen at their actual size 
+ * or any other size.
  */
- 
+
 PImage a;  // Declare variable "a" of type PImage
 
 void setup() {

@@ -1,8 +1,8 @@
 /**
  * Objects
- * by hbarragan. 
+ * by hbarragan.
  * 
- * Move the cursor across the image to change the speed and positions
+ * Move the cursor across the image to change the speed and positions 
  * of the geometry. The class MRect defines a group of lines.
  */
 

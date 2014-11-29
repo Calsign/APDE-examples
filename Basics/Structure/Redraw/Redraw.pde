@@ -1,11 +1,11 @@
 /**
- * Redraw. 
+ * Redraw.
  * 
- * The redraw() function makes draw() execute once.  
+ * The redraw() function makes draw() execute once. 
  * In this example, draw() is executed once every time 
- * the mouse is clicked. 
+ * the mouse is clicked.
  */
- 
+
 // The statements in the setup() function 
 // execute once when the program begins
 void setup() 
@@ -33,5 +33,3 @@ void mousePressed()
 {
   redraw();
 }
-
-

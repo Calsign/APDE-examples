@@ -1,10 +1,10 @@
 /**
- * Spot. 
+ * Spot.
  * 
- * Move the mouse the change the position and concentation
- * of a blue spot light. 
+ * Move the mouse the change the position and concentation 
+ * of a blue spot light.
  */
- 
+
 int concentration = 600; // Try values 1 -> 10000
 
 void setup() 
@@ -32,4 +32,3 @@ void draw()
   translate(width/2, height/2, 0); 
   sphere(120); 
 }
-

@@ -1,10 +1,10 @@
 /**
  * Sprite (Teddy)
- * by James Patterson. 
+ * by James Patterson.
  * 
- * Demonstrates loading and displaying a transparent GIF image. 
+ * Demonstrates loading and displaying a transparent GIF image.
  */
- 
+
 PImage teddy;
 
 float xpos;

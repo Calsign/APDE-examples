@@ -1,13 +1,13 @@
 /**
- * Scale 
- * by Denis Grutze. 
+ * Scale
+ * by Denis Grutze.
  * 
  * Paramenters for the scale() function are values specified 
  * as decimal percentages. For example, the method call scale(2.0) 
  * will increase the dimension of the shape by 200 percent. 
- * Objects always scale from the origin. 
+ * Objects always scale from the origin.
  */
- 
+
 float a = 0.0;
 float s = 0.0;
 

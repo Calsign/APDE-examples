@@ -1,10 +1,10 @@
 /**
  * Additive Wave
- * by Daniel Shiffman. 
+ * by Daniel Shiffman.
  * 
- * Create a more complex wave by adding two waves together. 
+ * Create a more complex wave by adding two waves together.
  */
- 
+
 int xspacing = 8;   // How far apart should each horizontal location be spaced
 int w;              // Width of entire wave
 int maxwaves = 4;   // total # of waves to add together
@@ -66,4 +66,3 @@ void renderWave() {
     ellipse(x*xspacing,width/2+yvalues[x],16,16);
   }
 }
-

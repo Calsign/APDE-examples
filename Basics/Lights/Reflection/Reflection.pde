@@ -1,9 +1,9 @@
 /**
- * Reflection 
- * by Simon Greenwold. 
+ * Reflection
+ * by Simon Greenwold.
  * 
- * Vary the specular reflection component of a material
- * with the horizontal position of the mouse. 
+ * Vary the specular reflection component of a material 
+ * with the horizontal position of the mouse.
  */
 
 void setup() {

@@ -1,8 +1,8 @@
 /**
- * Setup and Draw. 
+ * Setup and Draw.
  * 
- * The draw() function creates a structure in which
- * to write programs that change with time. 
+ * The draw() function creates a structure in which 
+ * to write programs that change with time.
  */
 
 // The statements in the setup() function 
@@ -27,4 +27,3 @@ void draw() {
   } 
   line(0, y, width, y);  
 } 
-

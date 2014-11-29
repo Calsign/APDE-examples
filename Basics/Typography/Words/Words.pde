@@ -1,9 +1,8 @@
 /**
- * Words. 
+ * Words.
  * 
- * The text() function is used for writing words to the screen. 
+ * The text() function is used for writing words to the screen.
  */
-
 
 int x = 30;
 PFont fontA;

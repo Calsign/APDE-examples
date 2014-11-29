@@ -1,9 +1,9 @@
 /**
- * Mouse Functions. 
+ * Mouse Functions.
  * 
- * Click on the box and drag it across the screen. 
+ * Click on the box and drag it across the screen.
  */
- 
+
 float bx;
 float by;
 int bs = 20;
@@ -11,7 +11,6 @@ boolean bover = false;
 boolean locked = false;
 float bdifx = 0.0; 
 float bdify = 0.0; 
-
 
 void setup() 
 {
@@ -52,7 +51,6 @@ void mousePressed() {
   }
   bdifx = mouseX-bx; 
   bdify = mouseY-by; 
-
 }
 
 void mouseDragged() {
@@ -65,4 +63,3 @@ void mouseDragged() {
 void mouseReleased() {
   locked = false;
 }
-

@@ -1,10 +1,10 @@
 /**
- * Noise2D 
- * by Daniel Shiffman.  
+ * Noise2D
+ * by Daniel Shiffman.
  * 
- * Using 2D noise to create simple texture. 
+ * Using 2D noise to create simple texture.
  */
- 
+
 float increment = 0.02;
 
 void setup() {
@@ -42,6 +42,3 @@ void draw() {
   
   updatePixels();
 }
-
-
-

@@ -1,8 +1,8 @@
 /**
  * Mixture
- * by Simon Greenwold. 
+ * by Simon Greenwold.
  * 
- * Display a box with three different kinds of lights. 
+ * Display a box with three different kinds of lights.
  */
 
 void setup() {

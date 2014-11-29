@@ -1,8 +1,8 @@
 /**
- * Loading URLs. 
+ * Loading URLs.
  * 
- * Click on the left button to open a different URL in the same window (Only
- * works online). Click on the right button to open a URL in a new browser window.  
+ * Click on the left button to open a different URL in the same window (Only 
+ * works online). Click on the right button to open a URL in a new browser window.
 */
 
 boolean overLeftButton = false;
@@ -61,7 +61,3 @@ void checkButtons() {
     overLeftButton = overRightButton = false;
   }
 }
-
-
-
-

@@ -1,9 +1,9 @@
 /**
- * Scale Shape.  
- * Illustration by George Brower. 
+ * Scale Shape.
+ * Illustration by George Brower.
  * 
- * Move the mouse left and right to zoom the SVG file.
- * This shows how, unlike an imported image, the lines
+ * Move the mouse left and right to zoom the SVG file. 
+ * This shows how, unlike an imported image, the lines 
  * remain smooth at any size.
  */
 
