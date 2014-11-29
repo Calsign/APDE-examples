@@ -1,13 +1,13 @@
 /**
- * Primitives 3D. 
+ * Primitives 3D.
  * 
- * Placing mathematically 3D objects in synthetic space.
- * The lights() method reveals their imagined dimension.
- * The box() and sphere() functions each have one parameter
- * which is used to specify their size. These shapes are
+ * Placing mathematically 3D objects in synthetic space. 
+ * The lights() method reveals their imagined dimension. 
+ * The box() and sphere() functions each have one parameter 
+ * which is used to specify their size. These shapes are 
  * positioned using the translate() function.
  */
- 
+
 size(640, 360, P3D); 
 orientation(LANDSCAPE);
 background(0);
@@ -27,5 +27,3 @@ pushMatrix();
 translate(500, height*0.35, -200);
 sphere(280);
 popMatrix();
-
-

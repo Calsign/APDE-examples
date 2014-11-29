@@ -1,19 +1,19 @@
 /**
- * Characters Strings. 
+ * Characters Strings.
  * 
- * Click on the image to give it focus and then type letters to
+ * Click on the image to give it focus and then type letters to 
  * shift the location of the image. 
- * Characters are typographic symbols such as A, d, and %.  
+ * Characters are typographic symbols such as A, d, and %. 
  * The character datatype, abbreviated as char, stores letters and 
  * symbols in the Unicode format, a coding system developed to support 
- * a variety of world languages. Characters are distinguished from other
+ * a variety of world languages. Characters are distinguished from other 
  * symbols by putting them between single quotes ('P'). 
  * A string is a sequence of characters. A string is noted by surrounding 
  * a group of letters with double quotes ("Processing"). 
  * Chars and strings are most often used with the keyboard methods, 
- * to display text to the screen, and to load images or files. 
+ * to display text to the screen, and to load images or files.
  */
- 
+
 PImage frog;
 PFont font;
 int xoffset;

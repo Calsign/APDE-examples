@@ -1,9 +1,9 @@
 /**
- * Iteration. 
+ * Iteration.
  * 
- * Iteration with a "for" structure constructs repetitive forms. 
+ * Iteration with a "for" structure constructs repetitive forms.
  */
- 
+
 int k;
 int xpos1 = 100; 
 int xpos2 = 118; 

@@ -1,11 +1,11 @@
 /**
- * Relativity. 
+ * Relativity.
  * 
  * Each color is perceived in relation to other colors. 
- * The top and bottom bars each contain the same component colors,
- * but a different display order causes individual colors to appear differently. 
+ * The top and bottom bars each contain the same component colors, 
+ * but a different display order causes individual colors to appear differently.
  */
- 
+
 color a, b, c, d, e;
 
 void setup() {
@@ -34,9 +34,3 @@ void drawBand(color v, color w, color x, color y, color z, int ypos, int barWidt
     }
   }
 }
-
-
-
-
-
-

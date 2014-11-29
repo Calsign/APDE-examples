@@ -1,15 +1,13 @@
 /**
- * Subtractive Color Wheel 
- * by Ira Greenberg. 
+ * Subtractive Color Wheel
+ * by Ira Greenberg.
  * 
  * The primaries are red, yellow, and blue. The secondaries are green, 
  * purple, and orange. The tertiaries are  yellow-orange, red-orange, 
  * red-purple, blue-purple, blue-green, and yellow-green.
  * 
- * Create a shade or tint of the subtractive color wheel using
+ * Create a shade or tint of the subtractive color wheel using 
  * SHADE or TINT parameters.
- *
- * Updated 26 February 2010.
  */
 
 int segs = 12;
@@ -18,7 +16,6 @@ float rotAdjust = TWO_PI / segs / 2;
 float radius;
 float segWidth;
 float interval = TWO_PI / segs;
-
 
 void setup() {
   size(200, 200);
@@ -34,7 +31,6 @@ void setup() {
   //drawTintWheel();
   drawShadeWheel();
 }
-
 
 void drawShadeWheel() {
   for (int j = 0; j < steps; j++) {
@@ -60,7 +56,6 @@ void drawShadeWheel() {
     radius -= segWidth;
   }
 }
-
 
 void drawTintWheel() {
   for (int j = 0; j < steps; j++) {

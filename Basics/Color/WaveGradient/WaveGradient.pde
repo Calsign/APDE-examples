@@ -1,6 +1,6 @@
 /**
- * Wave Gradient 
- * by Ira Greenberg.  
+ * Wave Gradient
+ * by Ira Greenberg.
  * 
  * Generate a gradient along a sin() wave.
  */

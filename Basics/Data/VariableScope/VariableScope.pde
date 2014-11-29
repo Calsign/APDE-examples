@@ -1,17 +1,17 @@
 /**
- * Variable Scope. 
+ * Variable Scope.
  * 
  * Variables may either have a global or local "scope". 
- * For example, variables declared within either the
- * setup() or loop() functions may be only used in these
- * functions. Global variables, variables declared outside
- * of setup() and loop(), may be used anywhere within the program.
- * If a local variable is declared with the same name as a
+ * For example, variables declared within either the 
+ * setup() or loop() functions may be only used in these 
+ * functions. Global variables, variables declared outside 
+ * of setup() and loop(), may be used anywhere within the program. 
+ * If a local variable is declared with the same name as a 
  * global variable, the program will use the local variable to make 
- * its calculations within the current scope. Variables may be localized
- * within classes, functions, and iterative statements. 
+ * its calculations within the current scope. Variables may be localized 
+ * within classes, functions, and iterative statements.
  */
- 
+
 int a = 20;  // Create a global variable "a"
 
 void setup() 

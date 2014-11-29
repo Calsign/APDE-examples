@@ -1,12 +1,12 @@
 /**
- * Conditionals 2. 
+ * Conditionals 2.
  * 
  * We extend the language of conditionals by adding the 
  * keyword "else". This allows conditionals to ask 
- * two or more sequential questions, each with a different
- * action. 
+ * two or more sequential questions, each with a different 
+ * action.
  */
- 
+
 size(200, 200);
 background(0);
 

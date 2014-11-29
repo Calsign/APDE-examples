@@ -1,12 +1,12 @@
 /**
- * Simple Radial Gradient 
- * by Ira Greenberg. 
+ * Simple Radial Gradient
+ * by Ira Greenberg.
  * 
  * Using the convenient red(), green() 
- * and blue() component functions,
+ * and blue() component functions, 
  * generate an array of radial gradients.
  */
- 
+
 void setup(){
   size(200, 200);
   background(0);
@@ -55,4 +55,3 @@ void createGradient (float x, float y, float radius, color c1, color c2){
   strokeWeight(3);
   ellipse(x, y, radius*2, radius*2);
 }
-

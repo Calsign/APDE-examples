@@ -1,8 +1,8 @@
 /**
- * Bezier Ellipse  
- * By Ira Greenberg 
+ * Bezier Ellipse
+ * By Ira Greenberg
  * 
- * Generates an ellipse using bezier() and
+ * Generates an ellipse using bezier() and 
  * trig functions. Approximately every 1/2 
  * second a new ellipse is plotted using 
  * random values for control/anchor points.

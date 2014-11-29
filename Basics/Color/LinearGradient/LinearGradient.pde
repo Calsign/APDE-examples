@@ -1,9 +1,9 @@
 /**
- * Simple Linear Gradient 
- * by Ira Greenberg. 
+ * Simple Linear Gradient
+ * by Ira Greenberg.
  * 
  * Using the convenient red(), green() 
- * and blue() component functions,
+ * and blue() component functions, 
  * generate some linear gradients.
  */
 
@@ -70,4 +70,3 @@ void setGradient(int x, int y, float w, float h, color c1, color c2, int axis ){
     }  
   }
 }
-

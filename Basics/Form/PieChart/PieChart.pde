@@ -1,11 +1,11 @@
 /**
- * Pie Chart  
- * By Ira Greenberg 
+ * Pie Chart
+ * By Ira Greenberg
  * 
- * Uses the arc() function to generate a pie chart from the data
- * stored in an array. 
+ * Uses the arc() function to generate a pie chart from the data 
+ * stored in an array.
  */
- 
+
 size(200, 200);
 background(100);
 smooth();
@@ -20,4 +20,3 @@ for (int i = 0; i < angs.length; i++){
   arc(width/2, height/2, diameter, diameter, lastAng, lastAng+radians(angs[i]));
   lastAng += radians(angs[i]);  
 }
-

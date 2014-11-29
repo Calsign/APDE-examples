@@ -1,9 +1,9 @@
 /**
- * Embedding Iteration. 
+ * Embedding Iteration.
  * 
- * Embedding "for" structures allows repetition in two dimensions. 
+ * Embedding "for" structures allows repetition in two dimensions.
  */
- 
+
 float box_size = 11; 
 float box_space = 12; 
 int margin = 7; 
@@ -23,5 +23,3 @@ for (int i = margin; i < height-margin; i += box_space){
     box_size = box_size - 0.6;
   }
 }
-
-		

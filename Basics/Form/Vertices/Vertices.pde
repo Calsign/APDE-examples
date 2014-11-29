@@ -1,14 +1,14 @@
 /**
- * Vertices. 
+ * Vertices.
  * 
  * The beginShape() function begins recording vertices 
  * for a shape and endShape() stops recording. 
  * A vertex is a location in space specified by X, Y, 
  * and sometimes Z coordinates. After calling the beginShape() function, 
- * a series of vertex() functions must follow.  
+ * a series of vertex() functions must follow. 
  * To stop drawing the shape, call the endShape() functions.
  */
- 
+
 size(200, 200);
 background(0);
 noFill();
@@ -44,4 +44,3 @@ vertex(160, 10);
 vertex(170, 150);
 vertex(60, 150);
 endShape();
-

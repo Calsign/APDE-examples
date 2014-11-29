@@ -1,5 +1,5 @@
 /**
- * Inspired by Ira Greenberg's RadialGradient sketch,
+ * Inspired by Ira Greenberg's RadialGradient sketch, 
  * but uses a different method for the gradients.
  */
 
@@ -40,4 +40,3 @@ void drawGradient(float x, float y) {
     b1 += db;
   }
 }
-

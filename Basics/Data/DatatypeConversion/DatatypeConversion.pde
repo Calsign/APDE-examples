@@ -1,12 +1,12 @@
 /**
- * Datatype Conversion. 
+ * Datatype Conversion.
  * 
  * It is sometimes beneficial to convert a value from one type of 
  * data to another. Each of the conversion functions converts its parameter 
  * to an equivalent representation within its datatype. 
- * The conversion functions include int(), float(), char(), byte(), and others. 
+ * The conversion functions include int(), float(), char(), byte(), and others.
  */
- 
+
 size(200, 200);
 background(51);
 noStroke();

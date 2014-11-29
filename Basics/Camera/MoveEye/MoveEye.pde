@@ -1,5 +1,5 @@
 /**
- * Move Eye. 
+ * Move Eye.
  * by Simon Greenwold.
  * 
  * The camera lifts up (controlled by mouseY) while looking at the same point.

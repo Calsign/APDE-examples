@@ -1,15 +1,12 @@
 /**
- * Array Objects. 
+ * Array Objects.
  * 
- * Demonstrates the syntax for creating an array of custom objects. 
- * 
- * Updated 26 February 2010.
+ * Demonstrates the syntax for creating an array of custom objects.
  */
 
 int unit = 40;
 int count;
 Module[] mods;
-
 
 void setup() {
   size(320, 240);
@@ -29,11 +26,9 @@ void setup() {
   }
 }
 
-
 void draw() {
   for (int i = 0; i < count; i++) {
     mods[i].update();
     mods[i].draw();
   }
 }
-

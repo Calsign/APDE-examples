@@ -1,10 +1,10 @@
 /**
- * Array 2D. 
+ * Array 2D.
  * 
  * Demonstrates the syntax for creating a two-dimensional (2D) array.
- * Values in a 2D array are accessed through two index values.  
+ * Values in a 2D array are accessed through two index values. 
  * 2D arrays are useful for storing images. In this example, each dot 
- * is colored in relation to its distance from the center of the image. 
+ * is colored in relation to its distance from the center of the image.
  */
  
 float[][] distances;
@@ -27,6 +27,3 @@ for(int i=0; i<height; i+=2) {
     point(j, i);
   }
 }
-
-
-

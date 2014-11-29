@@ -1,11 +1,11 @@
 /**
- * Points and Lines. 
+ * Points and Lines.
  * 
- * Constructing a simple dimensional form with lines and rectangles.
- * Changing the value of the variable 'd' scales the image.
- * The four variables set the positions based on the value of 'd'. 
+ * Constructing a simple dimensional form with lines and rectangles. 
+ * Changing the value of the variable 'd' scales the image. 
+ * The four variables set the positions based on the value of 'd'.
  */
- 
+
 int d = 40;
 int p1 = d;
 int p2 = p1+d;

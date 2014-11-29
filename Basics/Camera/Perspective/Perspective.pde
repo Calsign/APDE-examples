@@ -1,5 +1,5 @@
 /**
- * Perspective. 
+ * Perspective.
  * 
  * Move the mouse left and right to change the field of view (fov).
  * Click to modify the aspect ratio. The perspective() function
@@ -39,4 +39,3 @@ void draw() {
   translate(0, 0, -50);
   box(30);
 }
-

@@ -1,11 +1,11 @@
 /**
- * Logical Operators. 
+ * Logical Operators.
  * 
  * The logical operators for AND (&&) and OR (||) are used to 
- * combine simple relational statements into more complex expressions.
- * The NOT (!) operator is used to negate a boolean statement. 
+ * combine simple relational statements into more complex expressions. 
+ * The NOT (!) operator is used to negate a boolean statement.
  */
- 
+
 size(200, 200);
 background(126);
 
@@ -40,6 +40,3 @@ for(int i=5; i<=195; i+=5) {
     point(width/4, i);
   }
 }
-
-
-

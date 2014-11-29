@@ -1,9 +1,9 @@
 /**
- * Reading. 
+ * Reading.
  * 
- * An image is recreated from its individual component colors.
+ * An image is recreated from its individual component colors. 
  * The many colors of the image are created through modulating the 
- * red, green, and blue values. This is an exageration of an LCD display. 
+ * red, green, and blue values. This is an exageration of an LCD display.
  */
 
 size(200, 200);
