@@ -1,6 +1,6 @@
 /**
  * Yellowtail
- * by Golan Levin (www.flong.com). 
+ * by Golan Levin (www.flong.com).
  * 
  * Click, drag, and release to create a kinetic gesture.
  * 
@@ -21,7 +21,6 @@ Polygon tempP;
 int tmpXp[];
 int tmpYp[];
 
-
 void setup() {
   size(displayWidth, displayHeight, P2D);
   background(0, 0, 0);
@@ -34,7 +33,6 @@ void setup() {
   }
   clearGestures();
 }
-
 
 void draw() {
   background(0);
@@ -54,7 +52,6 @@ void mousePressed() {
   G.addPoint(mouseX, mouseY);
 }
 
-
 void mouseDragged() {
   if (currentGestureID >= 0) {
     Gesture G = gestureArray[currentGestureID];
@@ -65,7 +62,6 @@ void mouseDragged() {
     }
   }
 }
-
 
 void keyPressed() {
   if (key == '+' || key == '=') {
@@ -84,7 +80,6 @@ void keyPressed() {
     clearGestures();
   }
 }
-
 
 void renderGesture(Gesture gesture, int w, int h) {
   if (gesture.exists) {

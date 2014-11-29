@@ -1,6 +1,10 @@
-// Implementation of 1D, 2D, and 3D Perlin noise. Based on the 
-// C code by Paul Bourke:
-// http://local.wasp.uwa.edu.au/~pbourke/texture_colour/perlin/
+/**
+ * Perlin.
+ * 
+ * Implementation of 1D, 2D, and 3D Perlin noise. Based on the 
+ * C code by Paul Bourke: http://local.wasp.uwa.edu.au/~pbourke/texture_colour/perlin/
+ */
+
 class Perlin {
   int B = 0x100;
   int BM = 0xff;
@@ -258,4 +262,3 @@ class Perlin {
     return sum;
   }
 }
-

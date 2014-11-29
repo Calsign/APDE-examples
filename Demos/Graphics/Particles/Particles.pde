@@ -1,4 +1,7 @@
-// Particles, by Daniel Shiffman
+/**
+ * Particles.
+ * by Daniel Shiffman.
+ */
 
 ParticleSystem ps;
 PImage sprite;  
@@ -26,5 +29,3 @@ void draw () {
   textSize(16);
   text("Frame rate: " + int(frameRate),10,20);
 }
-
-

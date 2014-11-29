@@ -1,8 +1,11 @@
-// Bezier patch By Maritus Watz:
-// http://www.openprocessing.org/sketch/57709
-// Normal calculation added by Andres Colubri
-// Direct port of sample code by Paul Bourke.
-// Original code: http://paulbourke.net/geometry/bezier/
+/**
+ * Bezier patch.
+ * by Maritus Watz: http://www.openprocessing.org/sketch/57709
+ * 
+ * Normal calculation added by Andres Colubri
+ * Direct port of sample code by Paul Bourke.
+ * Original code: http://paulbourke.net/geometry/bezier/
+ */
 
 int ni=3, nj=4, RESI=ni*10, RESJ=nj*10;
 PVector outp[][], inp[][];

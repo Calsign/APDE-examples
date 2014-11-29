@@ -9,4 +9,3 @@ public class Polygon {
     ypoints = new int[n];
   }  
 }
-

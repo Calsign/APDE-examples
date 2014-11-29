@@ -1,5 +1,4 @@
 class Particle {
-
   PVector velocity;
   float lifespan = 255;
   
@@ -7,8 +6,7 @@ class Particle {
   float partSize;
   
   PVector gravity = new PVector(0,0.1);
-
-
+  
   Particle() {
     partSize = random(10,60);
     part = createShape();
@@ -42,13 +40,12 @@ class Particle {
   
   boolean isDead() {
     if (lifespan < 0) {
-     return true;
+      return true;
     } else {
-     return false;
+      return false;
     } 
   }
   
-
   public void update() {
     lifespan = lifespan - 1;
     velocity.add(gravity);

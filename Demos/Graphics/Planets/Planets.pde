@@ -1,7 +1,10 @@
-// Planets, by Andres Colubri
-//
-// Sun and mercury textures from http://planetpixelemporium.com
-// Star field picture from http://www.galacticimages.com/
+/**
+ * Planets.
+ * by Andres Colubri.
+ * 
+ * Sun and mercury textures from http://planetpixelemporium.com
+ * Star field picture from http://www.galacticimages.com/
+ */
 
 PImage starfield;
 

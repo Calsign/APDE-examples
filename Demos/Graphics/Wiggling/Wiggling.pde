@@ -1,5 +1,9 @@
-// Press 'w' to start wiggling, space to restore
-// original positions.
+/**
+ * Wiggling.
+ *
+ * Press 'w' to start wiggling, space to restore 
+ * original positions.
+ */
 
 PShape cube;
 float cubeSize = 200;
