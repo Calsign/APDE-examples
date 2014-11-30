@@ -1,5 +1,5 @@
 PShape particles;
-PImage sprite;  
+PImage sprite;
 
 int npartTotal = 5000;
 float partSize = 20;
@@ -30,8 +30,8 @@ void setup() {
     part.vertex(cx - partSize/2, cy - partSize/2, cz, 0, 0);
     part.vertex(cx + partSize/2, cy - partSize/2, cz, sprite.width, 0);
     part.vertex(cx + partSize/2, cy + partSize/2, cz, sprite.width, sprite.height);
-    part.vertex(cx - partSize/2, cy + partSize/2, cz, 0, sprite.height);    
-    part.endShape();    
+    part.vertex(cx - partSize/2, cy + partSize/2, cz, 0, sprite.height);
+    part.endShape();
     particles.addChild(part);
   }
 
@@ -55,7 +55,6 @@ void draw () {
     frate = float(fcount) / fint;
     fcount = 0;
     lastm = m;
-    println("fps: " + frate); 
+    println("fps: " + frate);
   }  
 }
-

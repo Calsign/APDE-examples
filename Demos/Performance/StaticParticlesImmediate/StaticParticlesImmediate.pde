@@ -1,4 +1,4 @@
-PImage sprite;  
+PImage sprite;
 
 int npartTotal = 5000;
 float partSize = 20;
@@ -15,9 +15,9 @@ void setup() {
   frameRate(60);
   
   sprite = loadImage("sprite.png");
-
+  
   initPositions();
-
+  
   // Writing to the depth buffer is disabled to avoid rendering
   // artifacts due to the fact that the particles are semi-transparent
   // but not z-sorted.
@@ -26,10 +26,10 @@ void setup() {
 
 void draw () {
   background(0);
-
+  
   translate(width/2, height/2);
   rotateY(frameCount * 0.01);
- 
+  
   for (int n = 0; n < npartTotal; n++) {
     drawParticle(positions[n]);
   }
@@ -41,7 +41,7 @@ void draw () {
     fcount = 0;
     lastm = m;
     println("fps: " + frate); 
-  }  
+  }
 }
 
 void drawParticle(PVector center) {
@@ -53,7 +53,7 @@ void drawParticle(PVector center) {
   vertex(center.x - partSize/2, center.y - partSize/2, center.z, 0, 0);
   vertex(center.x + partSize/2, center.y - partSize/2, center.z, sprite.width, 0);
   vertex(center.x + partSize/2, center.y + partSize/2, center.z, sprite.width, sprite.height);
-  vertex(center.x - partSize/2, center.y + partSize/2, center.z, 0, sprite.height);                
+  vertex(center.x - partSize/2, center.y + partSize/2, center.z, 0, sprite.height);
   endShape();  
 }
 
@@ -63,4 +63,3 @@ void initPositions() {
     positions[n] = new PVector(random(-500, +500), random(-500, +500), random(-500, +500));
   }  
 }
-

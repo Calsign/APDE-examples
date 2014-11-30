@@ -7,7 +7,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-
 public class CompassManager {
   private Sensor sensor;
   private SensorManager sensorManager;
@@ -19,7 +18,6 @@ public class CompassManager {
   private boolean running = false;
 
   Context context;
-
 
   public CompassManager(Context parent) {
     this.context = parent;
@@ -41,13 +39,11 @@ public class CompassManager {
     resume();
   }
 
-
   public void resume() {
     if (isSupported()) {
       startListening();
     }
   }
-
 
   public void pause() {
     if (isListening()) {
@@ -55,14 +51,12 @@ public class CompassManager {
     }
   }
 
-
   /**
    * Returns true if the manager is listening to orientation changes
    */
   public boolean isListening() {
     return running;
   }
-
 
   /**
    * Unregisters listeners
@@ -78,7 +72,6 @@ public class CompassManager {
     }
   }
 
-
   /**
    * Returns true if at least one Accelerometer sensor is available
    */
@@ -91,7 +84,6 @@ public class CompassManager {
     return supported;
   }
 
-
   public void startListening() {
     sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
     List<Sensor> sensors = sensorManager.getSensorList(Sensor.TYPE_ORIENTATION);
@@ -101,12 +93,10 @@ public class CompassManager {
     }
   }
 
-
   /**
    * The listener that listen to events from the accelerometer listener
    */
   private SensorEventListener sensorEventListener = new SensorEventListener() {
-
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
       // ignored for now
     }
@@ -136,4 +126,3 @@ public class CompassManager {
     }
   };
 }
-

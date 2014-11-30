@@ -7,7 +7,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-
 /**
  * Android Accelerometer Sensor Manager Archetype
  * @author antoine vianey
@@ -56,27 +55,23 @@ public class AccelerometerManager {
     resume();
   }
 
-
   public AccelerometerManager(Context context, int threshold, int interval) {
     this(context);
     this.threshold = threshold;
     this.interval = interval;
   }
 
-
   public void resume() {
     if (isSupported()) {
       startListening();
     }
   }
-  
-  
+
   public void pause() {
     if (isListening()) {
       stopListening();
     }
   }
-
 
   /**
    * Returns true if the manager is listening to orientation changes
@@ -84,7 +79,6 @@ public class AccelerometerManager {
   public boolean isListening() {
     return running;
   }
-
 
   /**
    * Unregisters listeners
@@ -100,7 +94,6 @@ public class AccelerometerManager {
     }
   }
 
-
   /**
    * Returns true if at least one Accelerometer sensor is available
    */
@@ -113,7 +106,6 @@ public class AccelerometerManager {
     return supported;
   }
 
-
 //  /**
 //   * Configure the listener for shaking
 //   * @param threshold
@@ -125,7 +117,6 @@ public class AccelerometerManager {
 //    AccelerometerManager.threshold = threshold;
 //    AccelerometerManager.interval = interval;
 //  }
-
 
   /**
    * Registers a listener and start listening
@@ -142,7 +133,6 @@ public class AccelerometerManager {
     }
   }
 
-
 //  /**
 //   * Configures threshold and interval
 //   * And registers a listener and start listening
@@ -157,7 +147,6 @@ public class AccelerometerManager {
 //    configure(threshold, interval);
 //    startListening();
 //  }
-
 
   /**
    * The listener that listen to events from the accelerometer listener
@@ -199,7 +188,6 @@ public class AccelerometerManager {
         lastX = x;
         lastY = y;
         lastZ = z;
-
       } else {
         timeDiff = now - lastUpdate;
         if (timeDiff > 0) {
@@ -239,4 +227,3 @@ public class AccelerometerManager {
     }
   };
 }
-

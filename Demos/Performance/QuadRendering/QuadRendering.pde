@@ -5,10 +5,10 @@ public void setup() {
   orientation(LANDSCAPE);
   
   noStroke();
-  fill(0, 1);  
+  fill(0, 1);
 }
-  
-public void draw() {    
+
+public void draw() {
   background(255);
   for (int i = 0; i < 5000; i++) {
     float x = random(width);

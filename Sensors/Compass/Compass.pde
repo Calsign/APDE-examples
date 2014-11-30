@@ -1,21 +1,17 @@
 CompassManager compass;
 float direction;
 
-
 void setup() {
   compass = new CompassManager(this);
 }
-
 
 void pause() {
   if (compass != null) compass.pause();
 }
 
-
 void resume() {
   if (compass != null) compass.resume();
 }
-
 
 void draw() {
   background(255);
@@ -32,7 +28,6 @@ void draw() {
   vertex(20, 60);
   endShape(CLOSE);
 }
-
 
 void directionEvent(float newDirection) {
   direction = newDirection;
