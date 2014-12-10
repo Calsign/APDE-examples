@@ -1,11 +1,11 @@
 /**
  * ArrayList of objects
- * by Daniel Shiffman.  
+ * by Daniel Shiffman.
  * 
  * This example demonstrates how to use a Java ArrayList to store 
- * a variable number of objects.  Items can be added and removed
+ * a variable number of objects.  Items can be added and removed 
  * from the ArrayList.
- *
+ * 
  * Click the mouse to add bouncing balls.
  */
 
@@ -40,13 +40,10 @@ void draw() {
       // Items can be deleted with remove()
       balls.remove(i);
     }
-    
-  }  
-  
+  }
 }
 
 void mousePressed() {
   // A new ball object is added to the ArrayList (by default to the end)
   balls.add(new Ball(mouseX, mouseY, ballWidth));
 }
-

@@ -1,21 +1,20 @@
 // An individual Particle
 
 class Particle {
-
   // Velocity
   PVector center;
   PVector velocity;
   // Lifespane is tied to alpha
   float lifespan;
-
+  
   // The particle PShape
   PShape part;
   // The particle size
   float partSize;
-
+  
   // A single force
   PVector gravity = new PVector(0, 0.1);
-
+  
   Particle() {    
     partSize = random(10, 60);
     // The particle is a textured quad
@@ -29,18 +28,18 @@ class Particle {
     part.vertex(+partSize/2, +partSize/2, sprite.width, sprite.height);
     part.vertex(-partSize/2, +partSize/2, 0, sprite.height);
     part.endShape();
-
+    
     // Initialize center vector
     center = new PVector(); 
     
     // Set the particle starting location
     rebirth(width/2, height/2);
   }
-
+  
   PShape getShape() {
     return part;
   }
-
+  
   void rebirth(float x, float y) {
     float a = random(TWO_PI);
     float speed = random(0.5, 4);
@@ -56,18 +55,17 @@ class Particle {
     // Update center vector
     center.set(x, y, 0);
   }
-
+  
   // Is it off the screen, or its lifespan is over?
   boolean isDead() {
     if (center.x > width  || center.x < 0 || 
         center.y > height || center.y < 0 || lifespan < 0) {
       return true;
-    } 
-    else {
+    } else {
       return false;
     }
   }
-
+  
   void update() {
     // Decrease life
     lifespan = lifespan - 1;

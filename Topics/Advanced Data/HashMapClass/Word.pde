@@ -1,5 +1,4 @@
 class Word {
-  
   int count;
   String word;
   
@@ -11,5 +10,4 @@ class Word {
   void count() {
     count++;
   }
-
-}  
+}

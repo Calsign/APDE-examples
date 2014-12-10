@@ -3,11 +3,10 @@
  * 
  * Click and drag to draw and start the program.
  * 
- * A simple animation tool that displays a continuous cycle of
+ * A simple animation tool that displays a continuous cycle of 
  * twenty-four images. Each image is displayed for 30 milliseconds 
  * to create animation. While each image is displayed, it’s possible 
- * to draw directly into it by pressing the mouse and moving the cursor. 
- * 
+ * to draw directly into it by pressing the mouse and moving the cursor.
  */
 
 int currentFrame = 0;
@@ -46,4 +45,3 @@ void nextFrame()
   }
   image(frames[currentFrame], 0, 0);
 }
-

@@ -20,13 +20,12 @@ void setup() {
   
   float x = 0;
   // Calculate the path as a sine wave
-  for (float a = 0; a < TWO_PI; a+=0.1) {
+  for (float a = 0; a < TWO_PI; a += 0.1) {
     path.vertex(x,sin(a)*100);
-    x+= 5;
+    x += 5;
   }
   // The path is complete
   path.endShape();  
-
 }
 
 void draw() {
@@ -35,4 +34,3 @@ void draw() {
   translate(mouseX, mouseY);
   shape(path);
 }
-

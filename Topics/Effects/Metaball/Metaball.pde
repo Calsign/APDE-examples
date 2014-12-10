@@ -1,10 +1,10 @@
 /**
  * Metaball Demo Effect
- * by luis2048. 
+ * by luis2048.
  * 
  * Organic-looking n-dimensional objects. The technique for rendering 
  * metaballs was invented by Jim Blinn in the early 1980s. Each metaball 
- * is defined as a function in n-dimensions. 
+ * is defined as a function in n-dimensions.
  */
 
 int numBlobs = 3;
@@ -27,10 +27,10 @@ void setup() {
 }
 
 void draw() {
-  for (int i=0; i<numBlobs; ++i) {
-    blogPx[i]+=blogDx[i];
-    blogPy[i]+=blogDy[i];
-
+  for (int i = 0; i < numBlobs; ++ i) {
+    blogPx[i] += blogDx[i];
+    blogPy[i] += blogDy[i];
+    
     // bounce across screen
     if (blogPx[i] < 0) {
       blogDx[i] = 1;
@@ -42,35 +42,34 @@ void draw() {
       blogDy[i] = 1;
     }
     if (blogPy[i] > pg.height) {
-      blogDy[i]=-1;
+      blogDy[i] = -1;
     }
-
-    for (int x = 0; x < pg.width; x++) {
-      vx[i][x] = int(sq(blogPx[i]-x));
+    
+    for (int x = 0; x < pg.width; x ++) {
+      vx[i][x] = int(sq(blogPx[i] - x));
     }
-
-    for (int y = 0; y < pg.height; y++) {
-      vy[i][y] = int(sq(blogPy[i]-y)); 
+    
+    for (int y = 0; y < pg.height; y ++) {
+      vy[i][y] = int(sq(blogPy[i] - y)); 
     }
   }
-
+  
   // Output into a buffered image for reuse
   pg.beginDraw();
   pg.loadPixels();
-  for (int y = 0; y < pg.height; y++) {
-    for (int x = 0; x < pg.width; x++) {
+  for (int y = 0; y < pg.height; y ++) {
+    for (int x = 0; x < pg.width; x ++) {
       int m = 1;
-      for (int i = 0; i < numBlobs; i++) {
+      for (int i = 0; i < numBlobs; i ++) {
         // Increase this number to make your blobs bigger
-        m += 60000/(vy[i][y] + vx[i][x]+1);
+        m += 60000 / (vy[i][y] + vx[i][x] + 1);
       }
-      pg.pixels[x+y*pg.width] = color(0, m+x, (x+m+y)/2);
+      pg.pixels[x + y * pg.width] = color(0, m + x, (x + m + y) / 2);
     }
   }
   pg.updatePixels();
   pg.endDraw();
-
+  
   // Display the results
   image(pg, 0, 0, width, height); 
 }
-

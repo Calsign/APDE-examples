@@ -17,7 +17,7 @@ class Ball {
     gravity = 0.1;
   }
   
-    void move() {
+  void move() {
     // Add gravity to speed
     speed = speed + gravity;
     // Add speed to y location
@@ -47,4 +47,4 @@ class Ball {
     //stroke(0,life);
     ellipse(x,y,w,w);
   }
-}  
+}

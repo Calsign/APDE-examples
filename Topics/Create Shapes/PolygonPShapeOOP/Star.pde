@@ -1,16 +1,15 @@
 // A class to describe a Star shape
 
 class Star {
-
   // The PShape object
   PShape s;
   // The location where we will draw the shape
   float x, y;
   float speed;
-
+  
   Star() {
-    x = random(100, width-100);
-    y = random(100, height-100); 
+    x = random(100, width - 100);
+    y = random(100, height - 100); 
     speed = random(0.5, 3);
     // First create the shape
     s = createShape();
@@ -32,15 +31,15 @@ class Star {
     // The shape is complete
     s.endShape(CLOSE);
   }
-
+  
   void move() {
     // Demonstrating some simple motion
     x += speed;
-    if (x > width+100) {
+    if (x > width + 100) {
       x = -100;
     }
   }
-
+  
   void display() {
     // Locating and drawing the shape
     pushMatrix();
@@ -49,4 +48,3 @@ class Star {
     popMatrix();
   }
 }
-

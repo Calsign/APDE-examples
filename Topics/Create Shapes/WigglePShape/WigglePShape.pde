@@ -1,9 +1,8 @@
 /**
- * WigglePShape. 
+ * WigglePShape.
  * 
  * How to move the individual vertices of a PShape
  */
-
 
 // A "Wiggler" object
 Wiggler w;
@@ -19,5 +18,3 @@ void draw() {
   w.display();
   w.wiggle();
 }
-
-

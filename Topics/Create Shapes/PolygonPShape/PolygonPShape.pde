@@ -1,8 +1,7 @@
-
 /**
- * PrimitivePShape. 
+ * PrimitivePShape.
  * 
- * Using a PShape to display a custom polygon. 
+ * Using a PShape to display a custom polygon.
  */
 
 // The PShape object
@@ -39,4 +38,3 @@ void draw() {
   // Display the shape
   shape(star);
 }
-

@@ -7,7 +7,7 @@ class Polygon {
   float x, y;
   // Variable for simple motion
   float speed;
-
+  
   Polygon(PShape s_) {
     x = random(width);
     y = random(-500, -100); 
@@ -17,8 +17,8 @@ class Polygon {
   
   // Simple motion
   void move() {
-    y+=speed;
-    if (y > height+100) {
+    y += speed;
+    if (y > height + 100) {
       y = -100;
     }
   }
@@ -31,4 +31,3 @@ class Polygon {
     popMatrix();
   }
 }
-

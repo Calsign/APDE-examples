@@ -3,7 +3,7 @@
  * 
  * How to cut a shape out of another using beginContour() and endContour()
  */
- 
+
 PShape s;
 
 void setup() {
@@ -42,4 +42,3 @@ void draw() {
   s.rotate(0.01);
   shape(s);
 }
-

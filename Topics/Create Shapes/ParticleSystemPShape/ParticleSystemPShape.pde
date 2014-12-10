@@ -16,13 +16,12 @@ void setup() {
   sprite = loadImage("sprite.png");
   // A new particle system with 1,000 particles
   ps = new ParticleSystem(1000);
-
-  // Writing to the depth buffer is disabled to avoid rendering
-  // artifacts due to the fact that the particles are semi-transparent
+  
+  // Writing to the depth buffer is disabled to avoid rendering 
+  // artifacts due to the fact that the particles are semi-transparent 
   // but not z-sorted.
   hint(DISABLE_DEPTH_MASK);
-
-} 
+}
 
 void draw () {
   background(0);
@@ -37,6 +36,4 @@ void draw () {
   fill(255);
   textSize(16);
   text("Frame rate: " + int(frameRate),10,20);
-  
 }
-

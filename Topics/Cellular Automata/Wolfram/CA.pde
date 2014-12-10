@@ -1,11 +1,10 @@
 class CA {
-
-  int[] cells;     // An array of 0s and 1s 
+  int[] cells;     // An array of 0s and 1s
   int generation;  // How many generations?
   int scl;         // How many pixels wide/high is each cell?
-
+  
   int[] rules;     // An array to store the ruleset, for example {0,1,1,0,1,1,0,1}
-
+  
   CA(int[] r) {
     rules = r;
     scl = 1;
@@ -13,7 +12,7 @@ class CA {
     restart();
   }
   
-   CA() {
+  CA() {
     scl = 1;
     cells = new int[width/scl];
     randomize();
@@ -40,7 +39,7 @@ class CA {
     cells[cells.length/2] = 1;    // We arbitrarily start with just the middle cell having a state of "1"
     generation = 0;
   }
-
+  
   // The process of creating the new generation
   void generate() {
     // First we create an empty array for the new values
@@ -91,4 +90,3 @@ class CA {
     }
   }
 }
-

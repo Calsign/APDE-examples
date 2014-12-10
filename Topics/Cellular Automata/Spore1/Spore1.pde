@@ -1,11 +1,11 @@
 /**
- * Spore 1 
- * by Mike Davis. 
+ * Spore 1
+ * by Mike Davis.
  * 
- * A short program for alife experiments. Click in the window to restart.
- * Each cell is represented by a pixel on the display as well as an entry in
- * the array 'cells'. Each cell has a run() method, which performs actions
- * based on the cell's surroundings.  Cells run one at a time (to avoid conflicts
+ * A short program for alife experiments. Click in the window to restart. 
+ * Each cell is represented by a pixel on the display as well as an entry in 
+ * the array 'cells'. Each cell has a run() method, which performs actions 
+ * based on the cell's surroundings.  Cells run one at a time (to avoid conflicts 
  * like wanting to move to the same space) and in random order.
  */
 
@@ -17,12 +17,12 @@ color spore_color;
 // set lower for smoother animation, higher for faster simulation
 int runs_per_loop = 10000;
 color black = color(0, 0, 0);
-  
+
 void setup()
 {
   size(640, 200, P2D);
   frameRate(24);
-  clearscr();  
+  clearscr();
   w = new World();
   spore_color = color(172, 255, 128);
   seed();

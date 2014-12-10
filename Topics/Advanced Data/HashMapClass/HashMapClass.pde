@@ -1,18 +1,17 @@
 /**
  * HashMap example
- * by Daniel Shiffman.  
+ * by Daniel Shiffman.
  * 
  * This example demonstrates how to use a HashMap to store 
- * a collection of objects referenced by a key.
- * This is much like an array, only instead of accessing elements
- * with a numeric index, we use a String.
- * If you are familiar with associative arrays from other languages,
+ * a collection of objects referenced by a key. 
+ * This is much like an array, only instead of accessing elements 
+ * with a numeric index, we use a String. 
+ * If you are familiar with associative arrays from other languages, 
  * this is the same idea.
- *
+ * 
  * This example uses the HashMap to perform a simple concordance
  * http://en.wikipedia.org/wiki/Concordance_(publishing)
  */
-
 
 HashMap words;  // HashMap object
 
@@ -39,7 +38,7 @@ void draw() {
   // Look at words one at a time
   String s = tokens[counter];
   counter = (counter + 1) % tokens.length;
-
+  
   // Is the word in the HashMap
   if (words.containsKey(s)) {
     // Get the word object and increase the count
@@ -54,14 +53,14 @@ void draw() {
     // The key for us is the String and the value is the Word object
     words.put(s, w);    
   }
-
+  
   // Make an iterator to look at all the things in the HashMap
   Iterator i = words.values().iterator();
-
+  
   // x and y will be used to locate each word
   float x = 0;
   float y = height-10;
-
+  
   while (i.hasNext()) {
     // Look at each word
     Word w = (Word) i.next();

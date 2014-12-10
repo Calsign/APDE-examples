@@ -1,9 +1,9 @@
 /**
- * Continuous Lines. 
+ * Continuous Lines.
  * 
- * Click and drag the mouse to draw a line. 
+ * Click and drag the mouse to draw a line.
  */
- 
+
 void setup() {
   size(640, 200);
   background(102);

@@ -1,14 +1,14 @@
 /**
- * Spore 2 
- * by Mike Davis. 
+ * Spore 2
+ * by Mike Davis.
  * 
  * A short program for alife experiments. Click in the window to restart. 
- * Each cell is represented by a pixel on the display as well as an entry in
- * the array 'cells'. Each cell has a run() method, which performs actions
- * based on the cell's surroundings.  Cells run one at a time (to avoid conflicts
- * like wanting to move to the same space) and in random order. 
+ * Each cell is represented by a pixel on the display as well as an entry in 
+ * the array 'cells'. Each cell has a run() method, which performs actions 
+ * based on the cell's surroundings.  Cells run one at a time (to avoid conflicts 
+ * like wanting to move to the same space) and in random order.
  */
- 
+
 World w;
 int maxcells = 8000;
 int numcells;
@@ -96,7 +96,7 @@ class Cell
     while(y > height - 1) {
       y-=height;
     }
-
+    
     // Cell instructions
     int myColor = w.getpix(x, y);
     if (myColor == spore1) {

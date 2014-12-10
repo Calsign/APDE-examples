@@ -4,7 +4,6 @@
  * How to group multiple PShapes into one PShape
  */
 
-
 // A PShape that will group PShapes
 PShape group;
 
@@ -65,4 +64,3 @@ void draw() {
   translate(mouseX, mouseY);
   shape(group);
 }
-

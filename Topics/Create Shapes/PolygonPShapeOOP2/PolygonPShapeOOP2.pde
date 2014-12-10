@@ -1,11 +1,10 @@
 /**
- * PolygonPShapeOOP. 
+ * PolygonPShapeOOP.
  * 
  * Wrapping a PShape inside a custom class 
  * and demonstrating how we can have a multiple objects each
  * using the same PShape.
  */
-
 
 // A list of objects
 ArrayList<Polygon> polygons;
@@ -43,11 +42,10 @@ void setup() {
 
 void draw() {
   background(255);
-
+  
   // Display and move them all
   for (Polygon poly : polygons) {
     poly.display();
     poly.move();
   }
 }
-

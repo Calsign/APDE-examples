@@ -1,8 +1,8 @@
 /**
- * Pulses. 
+ * Pulses.
  * 
- * Software drawing instruments can follow a rhythm or abide by rules independent
- * of drawn gestures. This is a form of collaborative drawing in which the draftsperson
+ * Software drawing instruments can follow a rhythm or abide by rules independent 
+ * of drawn gestures. This is a form of collaborative drawing in which the draftsperson 
  * controls some aspects of the image and the software controls others.
  */
 

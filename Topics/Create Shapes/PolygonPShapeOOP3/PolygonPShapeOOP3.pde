@@ -1,11 +1,10 @@
 /**
- * PolygonPShapeOOP. 
+ * PolygonPShapeOOP.
  * 
  * Wrapping a PShape inside a custom class 
- * and demonstrating how we can have a multiple objects each
+ * and demonstrating how we can have a multiple objects each 
  * using the same PShape.
  */
-
 
 // A list of objects
 ArrayList<Polygon> polygons;
@@ -23,7 +22,7 @@ void setup() {
   shapes[1] = createShape(RECT,0,0,100,100);
   shapes[1].setFill(color(255, 127));
   shapes[1].setStroke(false);
-  shapes[2] = createShape();  
+  shapes[2] = createShape();
   shapes[2].beginShape();
   shapes[2].fill(0, 127);
   shapes[2].noStroke();
@@ -38,7 +37,7 @@ void setup() {
   shapes[2].vertex(-47, -15);
   shapes[2].vertex(-14, -20);
   shapes[2].endShape(CLOSE);
-
+  
   // Make an ArrayList
   polygons = new ArrayList<Polygon>();
   
@@ -53,11 +52,10 @@ void setup() {
 
 void draw() {
   background(51);
-
+  
   // Display and move them all
   for (Polygon poly : polygons) {
     poly.display();
     poly.move();
   }
 }
-

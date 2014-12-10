@@ -1,14 +1,14 @@
 /**
  * Animated Sprite (Shifty + Teddy)
- * by James Patterson. 
+ * by James Patterson.
  * 
- * Press the mouse button to change animations.
- * Demonstrates loading, displaying, and animating GIF images.
+ * Press the mouse button to change animations. 
+ * Demonstrates loading, displaying, and animating GIF images. 
  * It would be easy to write a program to display 
  * animated GIFs, but would not allow as much control over 
- * the display sequence and rate of display. 
+ * the display sequence and rate of display.
  */
- 
+
 Animation animation1, animation2;
 float xpos, ypos;
 float drag = 30.0;
