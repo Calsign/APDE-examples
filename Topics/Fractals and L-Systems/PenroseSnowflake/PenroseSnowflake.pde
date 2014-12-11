@@ -1,8 +1,8 @@
-/** 
- * Penrose Snowflake L-System 
- * by Geraldine Sarmiento (NYU ITP). 
+/**
+ * Penrose Snowflake L-System
+ * by Geraldine Sarmiento (NYU ITP).
  * 
- * This code was based on Patrick Dwyer's L-System class. 
+ * This code was based on Patrick Dwyer's L-System class.
  */
 
 PenroseSnowflakeLSystem ps;
@@ -20,5 +20,3 @@ void draw() {
   background(0);
   ps.render();
 }
-
-

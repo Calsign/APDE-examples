@@ -8,7 +8,7 @@ class Record {
   float acceleration;
   int year;
   float origin;
-
+  
   public Record(String[] pieces) {
     name = pieces[0];
     mpg = float(pieces[1]);

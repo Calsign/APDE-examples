@@ -1,8 +1,8 @@
-/** 
- * Penrose Tile L-System 
+/**
+ * Penrose Tile L-System
  * by Geraldine Sarmiento (NYU ITP).
- *  
- * This code was based on Patrick Dwyer's L-System class. 
+ * 
+ * This code was based on Patrick Dwyer's L-System class.
  */
 
 PenroseLSystem ds;
@@ -20,9 +20,3 @@ void draw()
   background(0);
   ds.render();
 }
-
-
-
-
-
-

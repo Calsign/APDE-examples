@@ -1,23 +1,23 @@
 /**
- * Save Many Images. 
+ * Save Many Images.
  * 
- * The saveFrame() function allows you to save images from
- * a program while it is running. This example saves the first
- * 50 frames of a program. These images can be imported into
+ * The saveFrame() function allows you to save images from 
+ * a program while it is running. This example saves the first 
+ * 50 frames of a program. These images can be imported into 
  * animation software or QuickTime and then saved as a movie.
  */
 
 float x = 33;
 float numFrames = 50;
 
-void setup() 
+void setup()
 {
   size(200, 200);
   smooth();
   noStroke();
 }
 
-void draw() 
+void draw()
 {
   background(0);
   x += random(-2, 2);

@@ -1,7 +1,7 @@
 /**
  * Tile Images
  *
- * Draws an image larger than the screen, and saves the image as six tiles.
+ * Draws an image larger than the screen, and saves the image as six tiles. 
  * The scaleValue variable sets amount of scaling: 1 is 100%, 2 is 200%, etc.
  */
 
@@ -25,10 +25,10 @@ void draw() {
 }
 
 void setOffset() {
-  xoffset++;
+  xoffset ++;
   if (xoffset == scaleValue) {
     xoffset = 0;
-    yoffset++;
+    yoffset ++;
     if (yoffset == scaleValue) {
       println("Tiles saved.");
       exit();

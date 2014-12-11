@@ -1,10 +1,9 @@
-/** 
- * Pentigree L-System 
- * by Geraldine Sarmiento (NYU ITP). 
+/**
+ * Pentigree L-System
+ * by Geraldine Sarmiento (NYU ITP).
  * 
- * This code was based on Patrick Dwyer's L-System class. 
+ * This code was based on Patrick Dwyer's L-System class.
  */
-
 
 PentigreeLSystem ps;
 
@@ -19,5 +18,3 @@ void draw() {
   background(0);
   ps.render();
 }
-
-

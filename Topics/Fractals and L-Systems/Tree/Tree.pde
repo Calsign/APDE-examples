@@ -1,13 +1,13 @@
 /**
  * Recursive Tree
- * by Daniel Shiffman.  
+ * by Daniel Shiffman.
  * 
  * Renders a simple tree-like structure via recursion. 
  * The branching angle is calculated as a function of 
- * the horizontal mouse location. Move the mouse left
+ * the horizontal mouse location. Move the mouse left 
  * and right to change the angle.
  */
- 
+
 float theta;   
 
 void setup() {
@@ -31,7 +31,6 @@ void draw() {
   translate(0,-120);
   // Start the recursive branching!
   branch(120);
-
 }
 
 void branch(float h) {
@@ -57,5 +56,3 @@ void branch(float h) {
     popMatrix();
   }
 }
-
-

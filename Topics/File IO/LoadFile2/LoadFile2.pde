@@ -1,9 +1,9 @@
 /**
  * LoadFile 2
  * 
- * This example loads a data file about cars. Each element is separated
+ * This example loads a data file about cars. Each element is separated 
  * with a tab and corresponds to a different aspect of each car. The file stores 
- * the miles per gallon, cylinders, displacement, etc., for more than 400 different
+ * the miles per gallon, cylinders, displacement, etc., for more than 400 different 
  * makes and models. Press a mouse button to advance to the next group of entries.
  */
 
@@ -12,7 +12,7 @@ String[] lines;
 int recordCount;
 PFont body;
 int num = 9; // Display this many entries on each screen.
-int startingEntry = 0;  // Display from this entry number
+int startingEntry = 0; // Display from this entry number
 
 void setup() {
   size(200, 200);
@@ -24,7 +24,7 @@ void setup() {
   
   lines = loadStrings("cars2.tsv");
   records = new Record[lines.length];
-  for (int i = 0; i < lines.length; i++) {
+  for (int i = 0; i < lines.length; i ++) {
     String[] pieces = split(lines[i], TAB); // Load data into array
     if (pieces.length == 9) {
       records[recordCount] = new Record(pieces);
@@ -49,7 +49,7 @@ void draw() {
 void mousePressed() {
   startingEntry += num; 
   if (startingEntry > records.length) {
-    startingEntry = 0;  // go back to the beginning
+    startingEntry = 0; // go back to the beginning
   } 
   redraw();
 }
