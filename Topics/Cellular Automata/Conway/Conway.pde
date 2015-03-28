@@ -17,7 +17,7 @@ int[][][] world;
 
 void setup()
 {
-  size(640, 200, P2D);
+  size(640, 200, JAVA2D);
   frameRate(12);
   sx = width;
   sy = height;
