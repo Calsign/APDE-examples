@@ -1,14 +1,12 @@
 /**
- * Image button. 
+ * Image button.
  * 
- * Loading images and using them to create a button. 
+ * Loading images and using them to create a button.
  */
- 
 
 ImageButtons button;
 
-void setup()
-{
+void setup() {
   size(200, 200);
   background(102, 102, 102);
   
@@ -16,55 +14,54 @@ void setup()
   PImage b = loadImage("base.gif");
   PImage r = loadImage("roll.gif");
   PImage d = loadImage("down.gif");
-  int x = width/2 - b.width/2;
-  int y = height/2 - b.height/2; 
+  int x = width / 2 - b.width / 2;
+  int y = height / 2 - b.height / 2; 
   int w = b.width;
   int h = b.height;
   button = new ImageButtons(x, y, w, h, b, r, d);
 }
 
-void draw()
-{
+void draw() {
   button.update();
   button.display();
 }
 
-class Button
-{
+class Button {
   int x, y;
   int w, h;
-  color basecolor, highlightcolor;
-  color currentcolor;
+  color baseColor, highlightColor;
+  color currentColor;
   boolean over = false;
-  boolean pressed = false;   
+  boolean pressed = false;
   
   void pressed() {
-    if(over && mousePressed) {
+    if (over && mousePressed) {
       pressed = true;
     } else {
       pressed = false;
-    }    
+    }
   }
   
-  boolean overRect(int x, int y, int width, int height) {
-  if (mouseX >= x && mouseX <= x+width && 
-      mouseY >= y && mouseY <= y+height) {
-    return true;
-  } else {
-    return false;
+  boolean overRect (int x, int y, int width, int height) {
+    if (mouseX >= x && mouseX <= x + width
+          && mouseY >= y && mouseY <= y + height) {
+  	  
+      return true;
+    } else {
+      return false;
+    }
   }
 }
-}
 
-class ImageButtons extends Button 
-{
+class ImageButtons extends Button {
   PImage base;
   PImage roll;
   PImage down;
-  PImage currentimage;
-
-  ImageButtons(int ix, int iy, int iw, int ih, PImage ibase, PImage iroll, PImage idown) 
-  {
+  PImage currentImage;
+  
+  ImageButtons(int ix, int iy, int iw, int ih,
+      PImage ibase, PImage iroll, PImage idown) {
+	
     x = ix;
     y = iy;
     w = iw;
@@ -72,37 +69,31 @@ class ImageButtons extends Button
     base = ibase;
     roll = iroll;
     down = idown;
-    currentimage = base;
+    currentImage = base;
   }
   
-  void update() 
-  {
+  void update() {
     over();
     pressed();
-    if(pressed) {
-      currentimage = down;
+	
+    if (pressed) {
+      currentImage = down;
     } else if (over){
-      currentimage = roll;
+      currentImage = roll;
     } else {
-      currentimage = base;
+      currentImage = base;
     }
   }
   
-  void over() 
-  {
-    if( overRect(x, y, w, h) ) {
+  void over() {
+    if (overRect(x, y, w, h)) {
       over = true;
     } else {
       over = false;
     }
   }
   
-  void display() 
-  {
-    image(currentimage, x, y);
+  void display() {
+    image(currentImage, x, y);
   }
 }
-
-
-
-

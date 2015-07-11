@@ -1,56 +1,54 @@
 /**
- * Buttons. 
+ * Buttons.
  * 
- * Click on one of the shapes to change
- * the background color. This example
- * demonstates a class for buttons.
+ * Click on one of the shapes to change 
+ * the background color. This example 
+ * demonstrates a class for buttons.
  */
 
-color currentcolor;
+color currentColor;
 
 CircleButton circle1, circle2, circle3;
 RectButton rect1, rect2;
 
 boolean locked = false;
 
-void setup()
-{
+void setup() {
   size(200, 200);
   smooth();
 
   color baseColor = color(102);
-  currentcolor = baseColor;
+  currentColor = baseColor;
 
   // Define and create circle button
-  color buttoncolor = color(204);
+  color buttonColor = color(204);
   color highlight = color(153);
   ellipseMode(CENTER);
-  circle1 = new CircleButton(30, 100, 100, buttoncolor, highlight);
+  circle1 = new CircleButton(30, 100, 100, buttonColor, highlight);
 
   // Define and create circle button
-  buttoncolor = color(204);
+  buttonColor = color(204);
   highlight = color(153); 
-  circle2 = new CircleButton(130, 110, 24, buttoncolor, highlight);
+  circle2 = new CircleButton(130, 110, 24, buttonColor, highlight);
 
   // Define and create circle button
-  buttoncolor = color(153);
+  buttonColor = color(153);
   highlight = color(102); 
-  circle3 = new CircleButton(130, 140, 24, buttoncolor, highlight);
+  circle3 = new CircleButton(130, 140, 24, buttonColor, highlight);
 
   // Define and create rectangle button
-  buttoncolor = color(102);
+  buttonColor = color(102);
   highlight = color(51); 
-  rect1 = new RectButton(150, 20, 100, buttoncolor, highlight);
+  rect1 = new RectButton(150, 20, 100, buttonColor, highlight);
 
   // Define and create rectangle button
-  buttoncolor = color(51);
+  buttonColor = color(51);
   highlight = color(0); 
-  rect2 = new RectButton(90, 20, 50, buttoncolor, highlight);
+  rect2 = new RectButton(90, 20, 50, buttonColor, highlight);
 }
 
-void draw()
-{
-  background(currentcolor);
+void draw() {
+  background(currentColor);
   stroke(255);
   update(mouseX, mouseY);
   circle1.display();
@@ -60,161 +58,134 @@ void draw()
   rect2.display();
 }
 
-void update(int x, int y)
-{
+void update(int x, int y) {
   if(locked == false) {
     circle1.update();
     circle2.update();
     circle3.update();
     rect1.update();
     rect2.update();
-  } 
-  else {
+  } else {
     locked = false;
   }
-
+  
   if(mousePressed) {
     if(circle1.pressed()) {
-      currentcolor = circle1.basecolor;
-    } 
-    else if(circle2.pressed()) {
-      currentcolor = circle2.basecolor;
-    } 
-    else if(circle3.pressed()) {
-      currentcolor = circle3.basecolor;
-    } 
-    else if(rect1.pressed()) {
-      currentcolor = rect1.basecolor;
-    } 
-    else if(rect2.pressed()) {
-      currentcolor = rect2.basecolor;
+      currentColor = circle1.baseColor;
+    } else if(circle2.pressed()) {
+      currentColor = circle2.baseColor;
+    } else if(circle3.pressed()) {
+      currentColor = circle3.baseColor;
+    } else if(rect1.pressed()) {
+      currentColor = rect1.baseColor;
+    } else if(rect2.pressed()) {
+      currentColor = rect2.baseColor;
     }
   }
 }
 
 
-class Button
-{
+class Button {
   int x, y;
   int size;
-  color basecolor, highlightcolor;
-  color currentcolor;
+  color baseColor, highlightColor;
+  color currentColor;
   boolean over = false;
   boolean pressed = false;   
-
-  void update() 
-  {
+  
+  void update() {
     if(over()) {
-      currentcolor = highlightcolor;
-    } 
-    else {
-      currentcolor = basecolor;
+      currentColor = highlightColor;
+    } else {
+      currentColor = baseColor;
     }
   }
-
-  boolean pressed() 
-  {
+  
+  boolean pressed() {
     if(over) {
       locked = true;
       return true;
-    } 
-    else {
+    } else {
       locked = false;
       return false;
     }    
   }
-
-  boolean over() 
-  { 
+  
+  boolean over() { 
     return true; 
   }
-
-  boolean overRect(int x, int y, int width, int height) 
-  {
-    if (mouseX >= x && mouseX <= x+width && 
-      mouseY >= y && mouseY <= y+height) {
+  
+  boolean overRect(int x, int y, int width, int height) {
+    if (mouseX >= x && mouseX <= x + width
+          && mouseY >= y && mouseY <= y + height) {
+      
       return true;
-    } 
-    else {
+    } else {
       return false;
     }
   }
-
-  boolean overCircle(int x, int y, int diameter) 
-  {
+  
+  boolean overCircle(int x, int y, int diameter) {
     float disX = x - mouseX;
     float disY = y - mouseY;
-    if(sqrt(sq(disX) + sq(disY)) < diameter/2 ) {
+    if(sqrt(sq(disX) + sq(disY)) < diameter / 2 ) {
       return true;
-    } 
-    else {
+    } else {
       return false;
     }
   }
-
 }
 
-class CircleButton extends Button
-{ 
-  CircleButton(int ix, int iy, int isize, color icolor, color ihighlight) 
-  {
+class CircleButton extends Button { 
+  CircleButton(int ix, int iy, int isize, color icolor, color ihighlight) {
     x = ix;
     y = iy;
     size = isize;
-    basecolor = icolor;
-    highlightcolor = ihighlight;
-    currentcolor = basecolor;
+    baseColor = icolor;
+    highlightColor = ihighlight;
+    currentColor = baseColor;
   }
-
-  boolean over() 
-  {
-    if( overCircle(x, y, size) ) {
+  
+  boolean over() {
+    if(overCircle(x, y, size)) {
       over = true;
       return true;
-    } 
-    else {
+    } else {
       over = false;
       return false;
     }
   }
-
-  void display() 
-  {
+  
+  void display() {
     stroke(255);
-    fill(currentcolor);
+    fill(currentColor);
     ellipse(x, y, size, size);
   }
 }
 
-class RectButton extends Button
-{
-  RectButton(int ix, int iy, int isize, color icolor, color ihighlight) 
-  {
+class RectButton extends Button {
+  RectButton(int ix, int iy, int isize, color icolor, color ihighlight) {
     x = ix;
     y = iy;
     size = isize;
-    basecolor = icolor;
-    highlightcolor = ihighlight;
-    currentcolor = basecolor;
+    baseColor = icolor;
+    highlightColor = ihighlight;
+    currentColor = baseColor;
   }
-
-  boolean over() 
-  {
-    if( overRect(x, y, size, size) ) {
+  
+  boolean over() {
+    if(overRect(x, y, size, size)) {
       over = true;
       return true;
-    } 
-    else {
+    } else {
       over = false;
       return false;
     }
   }
-
-  void display() 
-  {
+  
+  void display() {
     stroke(255);
-    fill(currentcolor);
+    fill(currentColor);
     rect(x, y, size, size);
   }
 }
-

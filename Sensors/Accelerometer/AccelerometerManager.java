@@ -16,24 +16,24 @@ public class AccelerometerManager {
   /** Accuracy configuration */
   private float threshold = 0.2f;
   private int interval = 1000;
-
+  
   private Sensor sensor;
   private SensorManager sensorManager;
   // you could use an OrientationListener array instead
   // if you plans to use more than one listener
 //  private AccelerometerListener listener;
-
+  
   Method shakeEventMethod;
   Method accelerationEventMethod;
-
+  
   /** indicates whether or not Accelerometer Sensor is supported */
   private Boolean supported;
   /** indicates whether or not Accelerometer Sensor is running */
   private boolean running = false;
-
+  
   Context context;
-
-
+  
+  
   public AccelerometerManager(Context parent) {
     this.context = parent;
     
@@ -43,7 +43,7 @@ public class AccelerometerManager {
     } catch (Exception e) {
       // no such method, or an error.. which is fine, just ignore
     }
-
+    
     try {
       accelerationEventMethod =
         parent.getClass().getMethod("accelerationEvent", new Class[] { Float.TYPE, Float.TYPE, Float.TYPE });
@@ -54,32 +54,32 @@ public class AccelerometerManager {
 //    System.out.println("accelerationEventMethod is " + accelerationEventMethod);
     resume();
   }
-
+  
   public AccelerometerManager(Context context, int threshold, int interval) {
     this(context);
     this.threshold = threshold;
     this.interval = interval;
   }
-
+  
   public void resume() {
     if (isSupported()) {
       startListening();
     }
   }
-
+  
   public void pause() {
     if (isListening()) {
       stopListening();
     }
   }
-
+  
   /**
    * Returns true if the manager is listening to orientation changes
    */
   public boolean isListening() {
     return running;
   }
-
+  
   /**
    * Unregisters listeners
    */
@@ -93,7 +93,7 @@ public class AccelerometerManager {
     catch (Exception e) {
     }
   }
-
+  
   /**
    * Returns true if at least one Accelerometer sensor is available
    */
@@ -105,7 +105,7 @@ public class AccelerometerManager {
     }
     return supported;
   }
-
+  
 //  /**
 //   * Configure the listener for shaking
 //   * @param threshold
@@ -117,7 +117,7 @@ public class AccelerometerManager {
 //    AccelerometerManager.threshold = threshold;
 //    AccelerometerManager.interval = interval;
 //  }
-
+  
   /**
    * Registers a listener and start listening
    * @param accelerometerListener callback for accelerometer events
@@ -132,7 +132,7 @@ public class AccelerometerManager {
 //      listener = accelerometerListener;
     }
   }
-
+  
 //  /**
 //   * Configures threshold and interval
 //   * And registers a listener and start listening
@@ -147,7 +147,7 @@ public class AccelerometerManager {
 //    configure(threshold, interval);
 //    startListening();
 //  }
-
+  
   /**
    * The listener that listen to events from the accelerometer listener
    */
@@ -157,7 +157,7 @@ public class AccelerometerManager {
     private long timeDiff = 0;
     private long lastUpdate = 0;
     private long lastShake = 0;
-
+    
     private float x = 0;
     private float y = 0;
     private float z = 0;
@@ -165,21 +165,21 @@ public class AccelerometerManager {
     private float lastY = 0;
     private float lastZ = 0;
     private float force = 0;
-
+    
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-
+    
     public void onSensorChanged(SensorEvent event) {
       // use the event timestamp as reference
       // so the manager precision won't depends 
       // on the AccelerometerListener implementation
       // processing time
       now = event.timestamp;
-
+      
       x = event.values[0];
       y = event.values[1];
       z = event.values[2];
-
+      
       // if not interesting in shake events
       // just remove the whole if then else bloc
       if (lastUpdate == 0) {
