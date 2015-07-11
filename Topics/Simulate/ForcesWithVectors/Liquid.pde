@@ -1,21 +1,19 @@
 /**
- * Forces (Gravity and Fluid Resistence) with Vectors 
- * by Daniel Shiffman.  
+ * Forces (Gravity and Fluid Resistence) with Vectors
+ * by Daniel Shiffman.
  * 
- * Demonstration of multiple force acting on bodies (Mover class)
- * Bodies experience gravity continuously
+ * Demonstration of multiple force acting on bodies (Mover class) 
+ * Bodies experience gravity continuously 
  * Bodies experience fluid resistance when in "water"
  */
- 
- // Liquid class 
- class Liquid {
 
-  
+// Liquid class 
+class Liquid {
   // Liquid is a rectangle
-  float x,y,w,h;
+  float x, y, w, h;
   // Coefficient of drag
   float c;
-
+  
   Liquid(float x_, float y_, float w_, float h_, float c_) {
     x = x_;
     y = y_;
@@ -29,8 +27,7 @@
     PVector l = m.location;
     if (l.x > x && l.x < x + w && l.y > y && l.y < y + h) {
       return true;
-    }  
-    else {
+    } else {
       return false;
     }
   }
@@ -40,7 +37,7 @@
     // Magnitude is coefficient * speed squared
     float speed = m.velocity.mag();
     float dragMagnitude = c * speed * speed;
-
+    
     // Direction is inverse of velocity
     PVector drag = m.velocity.get();
     drag.mult(-1);
@@ -53,8 +50,6 @@
   void display() {
     noStroke();
     fill(127);
-    rect(x,y,w,h);
+    rect(x, y, w, h);
   }
-
 }
-

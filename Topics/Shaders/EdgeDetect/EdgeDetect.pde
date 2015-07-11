@@ -12,21 +12,21 @@ boolean enabled = true;
     
 void setup() {
   size(640, 360, P2D);
-  orientation(LANDSCAPE);
-  img = loadImage("leaves.jpg");      
+  
+  img = loadImage("leaves.jpg");
   edges = loadShader("edges.glsl");
 }
 
 void draw() {
-  if (enabled == true) {
+  if (enabled) {
     shader(edges);
   }
   image(img, 0, 0);
 }
-    
+
 void mousePressed() {
   enabled = !enabled;
-  if (!enabled == true) {
+  if (!enabled) {
     resetShader();
   }
 }

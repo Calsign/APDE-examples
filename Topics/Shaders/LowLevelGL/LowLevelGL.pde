@@ -15,15 +15,14 @@ FloatBuffer colorData;
 
 void setup() {
   size(640, 360, P3D);
-  orientation(LANDSCAPE);
   
-  // Loads a shader to render geometry w/out
+  // Loads a shader to render geometry w/out 
   // textures and lights.
   flatShader = loadShader("frag.glsl", "vert.glsl");
-
+  
   vertices = new float[12];
   vertData = allocateDirectFloatBuffer(12);
-
+  
   colors = new float[12];
   colorData = allocateDirectFloatBuffer(12);
 }
@@ -39,7 +38,7 @@ void draw() {
   
   pgl = beginPGL();
   flatShader.bind();
-
+  
   vertLoc = pgl.getAttribLocation(flatShader.glProgram, "vertex");
   colorLoc = pgl.getAttribLocation(flatShader.glProgram, "color");
   
@@ -48,14 +47,14 @@ void draw() {
   
   pgl.vertexAttribPointer(vertLoc, 4, PGL.FLOAT, false, 0, vertData);
   pgl.vertexAttribPointer(colorLoc, 4, PGL.FLOAT, false, 0, colorData);
-
+  
   pgl.drawArrays(PGL.TRIANGLES, 0, 3);
-
+  
   pgl.disableVertexAttribArray(vertLoc);
   pgl.disableVertexAttribArray(colorLoc);
   
   flatShader.unbind();  
-
+  
   endPGL();
 }
 
@@ -71,7 +70,7 @@ void updateGeometry() {
   colors[3] = 1;
 
   // Corner 2
-  vertices[4] = width/2;
+  vertices[4] = width / 2;
   vertices[5] = height;
   vertices[6] = 0;
   vertices[7] = 1;
@@ -96,9 +95,9 @@ void updateGeometry() {
   
   colorData.rewind();
   colorData.put(colors);
-  colorData.position(0);  
+  colorData.position(0);
 }
 
 FloatBuffer allocateDirectFloatBuffer(int n) {
-  return ByteBuffer.allocateDirect(n * Float.SIZE/8).order(ByteOrder.nativeOrder()).asFloatBuffer();
+  return ByteBuffer.allocateDirect(n * Float.SIZE / 8).order(ByteOrder.nativeOrder()).asFloatBuffer();
 }

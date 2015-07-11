@@ -5,29 +5,29 @@
  * 
  * Press the mouse to turn the filter on and off.
  */
- 
+
 PShader edges;
 boolean applyFilter = true;
 
 void setup() {
   size(640, 360, P3D);
-  orientation(LANDSCAPE);
+  
   edges = loadShader("edges.glsl");
-  noStroke(); 
+  noStroke();
 }
 
 void draw() {
   background(0);
   lights();
   
-  translate(width/2, height/2);  
+  translate(width / 2, height / 2);
   pushMatrix();
-  rotateX(frameCount * 0.01);  
+  rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
   box(120);
   popMatrix();
-    
-  if (applyFilter == true) {
+  
+  if (applyFilter) {
     filter(edges);
   }
   

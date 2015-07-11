@@ -10,17 +10,15 @@ PShader blur;
 
 void setup() {
   size(640, 360, P2D);
-  orientation(LANDSCAPE);
-  blur = loadShader("blur.glsl"); 
+  
+  blur = loadShader("blur.glsl");
+  
   stroke(255, 0, 0);
   rectMode(CENTER);
 }
 
 void draw() {
-  filter(blur);  
-  rect(mouseX, mouseY, 150, 150); 
+  filter(blur);
+  rect(mouseX, mouseY, 150, 150);
   ellipse(mouseX, mouseY, 100, 100);
 }
-
-
-

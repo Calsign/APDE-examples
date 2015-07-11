@@ -1,15 +1,14 @@
 /**
- * Forces (Gravity and Fluid Resistence) with Vectors 
- * by Daniel Shiffman.  
+ * Forces (Gravity and Fluid Resistance) with Vectors
+ * by Daniel Shiffman.
  * 
- * Demonstration of multiple force acting on bodies (Mover class)
- * Bodies experience gravity continuously
+ * Demonstration of multiple force acting on bodies (Mover class) 
+ * Bodies experience gravity continuously 
  * Bodies experience fluid resistance when in "water"
- *
- * For the basics of working with PVector, see
- * http://processing.org/learning/pvector/
- * as well as examples in Topics/Vectors/
  * 
+ * For the basics of working with PVector, see 
+ * http://processing.org/learning/pvector/ 
+ * as well as examples in Topics/Vectors/
  */
 
 // Five moving bodies
@@ -20,10 +19,12 @@ Liquid liquid;
 
 void setup() {
   size(640, 360);
+  
   smooth();
+  
   reset();
   // Create liquid object
-  liquid = new Liquid(0, height/2, width, height/2, 0.1);
+  liquid = new Liquid(0, height / 2, width, height / 2, 0.1);
 }
 
 void draw() {
@@ -31,9 +32,8 @@ void draw() {
   
   // Draw water
   liquid.display();
-
+  
   for (int i = 0; i < movers.length; i++) {
-    
     // Is the Mover in the liquid?
     if (liquid.contains(movers[i])) {
       // Calculate drag force
@@ -41,12 +41,12 @@ void draw() {
       // Apply drag force to Mover
       movers[i].applyForce(drag);
     }
-
+    
     // Gravity is scaled by mass here!
-    PVector gravity = new PVector(0, 0.1*movers[i].mass);
+    PVector gravity = new PVector(0, 0.1 * movers[i].mass);
     // Apply gravity
     movers[i].applyForce(gravity);
-   
+    
     // Update and display
     movers[i].update();
     movers[i].display();
@@ -54,8 +54,7 @@ void draw() {
   }
   
   fill(255);
-  text("click mouse to reset",10,30);
-  
+  text("click mouse to reset", 10, 30);
 }
 
 void mousePressed() {
@@ -65,13 +64,6 @@ void mousePressed() {
 // Restart all the Mover objects randomly
 void reset() {
   for (int i = 0; i < movers.length; i++) {
-    movers[i] = new Mover(random(0.5, 3), 40+i*70, 0);
+    movers[i] = new Mover(random(0.5, 3), 40 + i * 70, 0);
   }
 }
-
-
-
-
-
-
-

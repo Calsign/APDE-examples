@@ -1,29 +1,28 @@
 /**
- * Chain. 
+ * Chain.
  * 
  * One mass is attached to the mouse position and the other 
- * is attached the position of the other mass. The gravity
- * in the environment pulls down on both. 
+ * is attached the position of the other mass. The gravity 
+ * in the environment pulls down on both.
  */
-
 
 Spring2D s1, s2;
 
 float gravity = 6.0;
 float mass = 2.0;
 
-void setup() 
-{
+void setup() {
   size(200, 200);
+  
   smooth();
   fill(0);
+  
   // Inputs: x, y, mass, gravity
-  s1 = new Spring2D(0.0, width/2, mass, gravity);
-  s2 = new Spring2D(0.0, width/2, mass, gravity);
+  s1 = new Spring2D(0.0, width / 2, mass, gravity);
+  s2 = new Spring2D(0.0, width / 2, mass, gravity);
 }
 
-void draw() 
-{
+void draw() {
   background(204);
   s1.update(mouseX, mouseY);
   s1.display(mouseX, mouseY);
@@ -33,7 +32,7 @@ void draw()
 
 class Spring2D {
   float vx, vy; // The x- and y-axis velocities
-  float x, y; // The x- and y-coordinates
+  float x, y;   // The x- and y-coordinates
   float gravity;
   float mass;
   float radius = 20;
@@ -61,7 +60,7 @@ class Spring2D {
   
   void display(float nx, float ny) {
     noStroke();
-    ellipse(x, y, radius*2, radius*2);
+    ellipse(x, y, radius * 2, radius * 2);
     stroke(255);
     line(x, y, nx, ny);
   }
