@@ -26,10 +26,10 @@ void setup() {
     mouse[i] = new MouseTouch();
   }
   
-  //Set up random noise
+  // Set up random noise
   noiseDetail(16, 0.6);
   
-  //Use HSB
+  // Use HSB
   colorMode(HSB, 100, 100, 100, 100);
   strokeWeight(8);
   
@@ -65,7 +65,7 @@ void draw() {
   // Clear the background
   background(0);
   
-  //Cycle through the particles
+  // Cycle through the particles
   for (int i = 0; i < particles.length; i ++) {
     particles[i].update();
     particles[i].display();

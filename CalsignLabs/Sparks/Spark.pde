@@ -44,7 +44,7 @@ class Spark {
   }
   
   void display() {
-    //Cycle through colors
+    // Cycle through colors
     stroke((baseColor + millis() / 25.0) 
         % 360, 80, 80, 204);
     strokeWeight(15);
